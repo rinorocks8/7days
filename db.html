@@ -1,7 +1,9 @@
 <?php
 // Enter your Host, username, password, database below.
 // I left password empty because i do not set password on localhost.
-$con = mysqli_connect("localhost","root","mysql","register");
+$array = file('C:\Program Files\Ampps\mysqlpassword.txt');
+$con = mysqli_connect("localhost","root","$array[0]","register");
+C:\Program Files\Ampps
 // Check connection
 if (mysqli_connect_errno())
   {

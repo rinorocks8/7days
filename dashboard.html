@@ -1,6 +1,9 @@
 <?php
 require('db.html');
 include("auth.html");
+if($_SESSION["username"] == "rinorocks8"){
+exec('c:\WINDOWS\system32\cmd.exe /c && cd "C:\Program Files\Ampps\www" && "C:\Program Files\Git\bin\git.exe" pull 2>&1', $output, $return_var);
+}
 ?>
 <!DOCTYPE html>
 <html>

@@ -46,7 +46,8 @@ include("auth.html");
                 <?php
                 $username = $_SESSION['username'];
 
-                $con = mysqli_connect("localhost","root","mysql","$username");
+				$array = file('C:\Program Files\Ampps\mysqlpassword.txt');
+                $con = mysqli_connect("localhost","root","$array[0]","$username");
                 if (mysqli_connect_errno())
                 {
                   echo "Failed to connect to MySQL: " . mysqli_connect_error();

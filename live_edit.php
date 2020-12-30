@@ -1,6 +1,7 @@
 <?php
     include("auth.html");
-    $con = mysqli_connect("localhost","root","mysql");
+	$array = file('C:\Program Files\Ampps\mysqlpassword.txt');
+    $con = mysqli_connect("localhost","root","$array[0]");
     if (mysqli_connect_errno())
     {
         echo "Failed to connect to MySQL: " . mysqli_connect_error();
