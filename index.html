@@ -279,7 +279,7 @@ include("auth.html");
                   ?>
                   <tr style="height: 70px; vertical-align: middle;" id="<?php echo $developer ['id']; ?>">
                     <td style="position: relative; padding: 0 !important; border-left: 0 !important;" id="class">
-                      <div style="position: absolute; width: 100% !important; height: 100% !important; display: flex; justify-content: center; align-items: center; <?php echo $developer ['s1']; ?>">
+                      <div style="position: relative; width: 100% !important; height: 100% !important; display: flex; justify-content: center; align-items: center; <?php echo $developer ['s1']; ?>">
                         <div style="position: relative;min-width: calc(100% - 4px);min-height: 14px;text-align: center;padding: 2px !important;" contenteditable="true" onkeyup="CellChange(<?php echo $developer ['id']; ?>, 'class', this.innerHTML);" onpaste="CellChange(<?php echo $developer ['id']; ?>, 'class', this.innerHTML);"><?php echo $developer ['class']; ?></div>
                       </div>
                       <div style="position: absolute; right: 0; bottom: 0; style: inline;">
